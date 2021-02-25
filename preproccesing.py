@@ -6,11 +6,11 @@ from tqdm import tqdm
 import random
 import pickle
 
-DATADIR = "E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset"
+DATADIR = "DATASET_DIRECTORY"
 CATEGORIES = os.listdir(DATADIR)
 
 infile = open(
-    'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset.pkl', 'rb')
+    'Directory where dataset.pkl file is stored', 'rb')
 data = pickle.load(infile)
 infile.close()
 
