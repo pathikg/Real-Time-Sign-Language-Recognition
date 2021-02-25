@@ -25,7 +25,7 @@ plt.title('after shuffle : '+str(CATEGORIES[data[50][1]]))
 plt.imshow(data[50][0], cmap="gray")
 
 plt.subplot(2, 2, 3)
-img = data[50][0]
+img = data[1690][0]
 Gblur = cv2.GaussianBlur(img, (5, 5), 0)
 plt.title('gaussian blur')
 plt.imshow(Gblur, cmap="gray")

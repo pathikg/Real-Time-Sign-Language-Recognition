@@ -22,11 +22,15 @@ while True:
     ret, thresh = cv2.threshold(roi, 127, 255, 0)
     contours, hierarchy = cv2.findContours(
         thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    cv2.drawContours(roi, contours, -1, (0, 255, 0), 3)
-    cv2.imshow('roi', roi)
+    # cv2.imshow('thresh', thresh)
 
     roi_edges = cv2.Canny(roi, 100, 200)
     cv2.imshow('Edges', roi_edges)
+
+    cv2.drawContours(roi, contours, -1, (0, 255, 0), 3)
+    cv2.imshow('roi', roi)
+
+    
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
