@@ -18,6 +18,11 @@ while True:
     roi = frame[120:400, 350:620]
     roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
     roi = cv2.GaussianBlur(roi, (5, 5), 0)
+
+    ret, thresh = cv2.threshold(roi, 127, 255, 0)
+    contours, hierarchy = cv2.findContours(
+        thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    cv2.drawContours(roi, contours, -1, (0, 255, 0), 3)
     cv2.imshow('roi', roi)
 
     roi_edges = cv2.Canny(roi, 100, 200)
