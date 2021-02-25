@@ -6,11 +6,11 @@ from tqdm import tqdm
 import random
 import pickle
 
-DATADIR = "DATASET_DIRECTORY"
+DATADIR = "E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset"
 CATEGORIES = os.listdir(DATADIR)
 
 infile = open(
-    'Directory where dataset.pkl file is stored', 'rb')
+    'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset.pkl', 'rb')
 data = pickle.load(infile)
 infile.close()
 
@@ -25,7 +25,7 @@ plt.title('after shuffle : '+str(CATEGORIES[data[50][1]]))
 plt.imshow(data[50][0], cmap="gray")
 
 plt.subplot(2, 2, 3)
-img = data[50][0]
+img = data[1690][0]
 Gblur = cv2.GaussianBlur(img, (5, 5), 0)
 plt.title('gaussian blur')
 plt.imshow(Gblur, cmap="gray")

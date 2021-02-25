@@ -20,9 +20,12 @@ img = Label(window, image=render)
 img.image = render
 img.place(x=0, y=0)
 
-label = tkinter.Label(
-    window, text="Sign Language Detection", font=("Arial Bold", 35))
+label = tkinter.Label(window, text="About Us", font=("Arial Bold", 25))
 label.place(relx=0.5, rely=0.08, anchor='n')
+
+label1 = tkinter.Label(window, text="Random text \n hsadfhsdihfspdfhsiodfhsdjfhsjdhf\njhdasgofjihgdsgjfhasdjkg",
+                       font=("Arial Bold", 22))
+label1.place(relx=0.3, rely=0.35, anchor='n')
 
 
 button1 = tkinter.Button(window, text="Start", font=(
