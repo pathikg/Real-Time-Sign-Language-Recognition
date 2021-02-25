@@ -33,7 +33,7 @@ button2.place(x=625, y=300)
 button3=tkinter.Button(window, text="Contact Us",font = ("Arial Bold",12),height = 2, width = 15)
 button3.place(x=625, y=400)
 
-button4=tkinter.Button(window, text="Exit",font = ("Arial Bold",12),height = 2, width = 15)
+button4=tkinter.Button(window, text="Exit",font = ("Arial Bold",12),height = 2, width = 15,command = window.destroy)
 button4.place(x=625, y=500)
 
 
