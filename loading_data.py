@@ -7,7 +7,7 @@ import random
 import pickle
 
 
-DATADIR = "E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset"
+DATADIR = "DATASET_DIRECTORY"
 CATEGORIES = os.listdir(DATADIR)
 
 data = []
@@ -30,8 +30,8 @@ def load_data():
 
 load_data()
 
-
-with open("E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset.pkl", "wb") as f:
+# storing data in pickle file
+with open("DIRECTORY where dataset.pkl file will be stored", "wb") as f:
     pickle.dump(data, f)
 f.close()
 
