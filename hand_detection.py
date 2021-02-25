@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 cap = cv2.VideoCapture(0)
 
-while(1):
+while True:
 
     ret, frame = cap.read()
     frame = cv2.flip(frame, 1)
