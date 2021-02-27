@@ -54,3 +54,19 @@ plt.show()
 
 
 # splitting into training and testing data
+
+# let's split it as a 80% - 20%, train-test
+t = int(len(data)*80/100)
+training_data = data[:t]
+testing_data = data[t:]
+
+# storing training and testing data into a pickle file
+# so that while training and testing of the model that pickle file can be loaded directly
+
+with open(r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\training_data.pkl", "wb") as f:
+    pickle.dump(training_data, f)
+f.close()
+
+with open(r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\testing_data.pkl", "wb") as f:
+    pickle.dump(testing_data, f)
+f.close()
