@@ -25,7 +25,7 @@ plt.title('after shuffle : '+str(CATEGORIES[data[50][1]]))
 plt.imshow(data[50][0], cmap="gray")
 
 plt.subplot(2, 2, 3)
-img = data[1690][0]
+img = data[50][0]
 Gblur = cv2.GaussianBlur(img, (5, 5), 0)
 plt.title('gaussian blur')
 plt.imshow(Gblur, cmap="gray")
@@ -36,10 +36,21 @@ plt.imshow(Gblur, cmap="gray")
 # plt.imshow(mask, cmap="gray")
 
 plt.subplot(2, 2, 4)
-edges = cv2.Canny(img, 100, 200)
+edges = cv2.Canny(Gblur, 100, 200)
 plt.title('edges')
 plt.imshow(edges, cmap="gray")
 
 plt.show()
 
 # now apply this to the whole dataset
+for i in tqdm(range(len(data))):
+    img = data[i][0]
+    Gblur = cv2.GaussianBlur(img, (5, 5), 0)
+    edges = cv2.Canny(Gblur, 100, 200)
+    data[i][0] = edges
+
+plt.imshow(data[10][0], cmap='gray')
+plt.show()
+
+
+# splitting into training and testing data
