@@ -30,8 +30,6 @@ while True:
     cv2.drawContours(roi, contours, -1, (0, 255, 0), 3)
     cv2.imshow('roi', roi)
 
-    
-
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
