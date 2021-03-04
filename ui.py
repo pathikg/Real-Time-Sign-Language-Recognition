@@ -19,7 +19,7 @@ window.rowconfigure(0, weight=1)
 window.columnconfigure(0, weight=1)
 
 frame1 = tkinter.Frame(window)
-frame2 = tkinter.Frame(window, bg='#faf3e0')
+frame2 = tkinter.Frame(window)
 frame3 = tkinter.Frame(window)
 
 for frame in (frame1, frame2, frame3):
@@ -44,16 +44,16 @@ button1 = tkinter.Button(frame1, text="Start", font=(
 button1.place(x=500, y=200)
 
 button2 = tkinter.Button(frame1, text="About", font=(
-    "Arial Bold", 12), height=2, width=15, command=lambda: show_frame(frame2))
-button2.place(x=500, y=300)
+    "Arial Bold", 8), height=2, width=10, command=lambda: show_frame(frame2))
+button1.place(x=500, y=250)
 
 button3 = tkinter.Button(frame1, text="Contact Us", font=(
-    "Arial Bold", 12), height=2, width=15, command=lambda: show_frame(frame3))
-button3.place(x=500, y=400)
+    "Arial Bold", 8), height=2, width=10, command=lambda: show_frame(frame3))
+button1.place(x=500, y=300)
 
 button4 = tkinter.Button(frame1, text="Exit", font=(
-    "Arial Bold", 12), height=2, width=15, command=window.destroy)
-button4.place(x=500, y=500)
+    "Arial Bold", 8), height=2, width=10, command=window.destroy)
+button1.place(x=500, y=350)
 
 
 # --------------------------------------------About US----------------------------------------
