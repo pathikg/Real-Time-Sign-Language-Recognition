@@ -2,6 +2,7 @@ import tkinter
 from tkinter import *
 from PIL import Image, ImageTk
 import os
+import hand_detection
 
 import matplotlib
 matplotlib.use('Agg')
@@ -15,7 +16,7 @@ class Example(Frame):
     def __init__(self, master, *pargs):
         Frame.__init__(self, master, *pargs)
 
-        self.image = Image.open("bg_img.jpeg")
+        self.image = Image.open("code/bg_img.jpeg")
         self.img_copy = self.image.copy()
 
         self.background_image = ImageTk.PhotoImage(self.image)
@@ -68,7 +69,7 @@ label.place(relx=0.5, rely=0.08, anchor='n')
 
 
 button1 = tkinter.Button(frame1, text="Start", font=(
-    "Arial Bold", 12), height=2, width=15, command=lambda: show_frame(frame1))
+    "Arial Bold", 12), height=2, width=15, command=lambda: hand_detection.capture())
 button1.place(x=430, y=175)
 
 button2 = tkinter.Button(frame1, text="About", font=(
@@ -90,7 +91,7 @@ button4.place(x=430, y=400)
 # e.pack(fill=BOTH, expand=YES)
 
 
-load = Image.open("shinyblack2.jpg")
+load = Image.open("code/shinyblack2.jpg")
 render = ImageTk.PhotoImage(load)
 
 img = Label(frame2, image=render)
@@ -125,7 +126,7 @@ button4.place(x=450, y=400)
 # --------------------------------------------Contact Us----------------------------------------
 frame3.configure(bg='gainsboro')
 
-load = Image.open("shinyblack1.jpg")
+load = Image.open("code/shinyblack1.jpg")
 render = ImageTk.PhotoImage(load)
 
 img = Label(frame3, image=render)
