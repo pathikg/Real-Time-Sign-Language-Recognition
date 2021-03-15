@@ -17,7 +17,7 @@ def capture():
         cv2.rectangle(frame, (0, 0), (300, 50), (0, 0, 0), -1)
         frame = cv2.putText(frame, 'press q to exit', (30, 30), cv2.FONT_HERSHEY_SIMPLEX,
                             1, (255, 255, 255), 1, cv2.LINE_AA)
-        cv2.imshow('Original', frame)
+        cv2.imshow('Smile', frame)
 
         roi = frame[120:400, 350:620]
         roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
@@ -39,6 +39,3 @@ def capture():
 
     cv2.destroyAllWindows()
     cap.release()
-
-
-capture()
