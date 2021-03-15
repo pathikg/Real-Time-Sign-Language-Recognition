@@ -14,6 +14,9 @@ def capture():
         frame = cv2.resize(frame, (frame_width, frame_height))
 
         cv2.rectangle(frame, (350, 120), (620, 400), (0, 255, 0), 2)
+        cv2.rectangle(frame, (0, 0), (300, 50), (0, 0, 0), -1)
+        frame = cv2.putText(frame, 'press q to exit', (30, 30), cv2.FONT_HERSHEY_SIMPLEX,
+                            1, (255, 255, 255), 1, cv2.LINE_AA)
         cv2.imshow('Original', frame)
 
         roi = frame[120:400, 350:620]
@@ -36,3 +39,6 @@ def capture():
 
     cv2.destroyAllWindows()
     cap.release()
+
+
+capture()
