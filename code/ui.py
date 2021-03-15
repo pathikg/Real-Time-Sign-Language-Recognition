@@ -27,7 +27,7 @@ for frame in (frame1, frame2, frame3):
 
 
 # --------------------------------------------Main Screen----------------------------------------
-load = Image.open("bg_img.jpeg")
+load = Image.open("bg_img (2).jpeg")
 render = ImageTk.PhotoImage(load)
 
 img = Label(frame1, image=render)
