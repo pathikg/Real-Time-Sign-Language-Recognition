@@ -2,7 +2,7 @@ import tkinter
 from tkinter import *
 from PIL import Image, ImageTk
 import os
-import hand_detection
+from hand_detection import capture
 
 import matplotlib
 matplotlib.use('Agg')
@@ -69,7 +69,7 @@ label.place(relx=0.5, rely=0.08, anchor='n')
 
 
 button1 = tkinter.Button(frame1, text="Start", font=(
-    "Arial Bold", 12), height=2, width=15, command=lambda: hand_detection.capture())
+    "Arial Bold", 12), height=2, width=15, command=lambda: capture())
 button1.place(x=430, y=175)
 
 button2 = tkinter.Button(frame1, text="About", font=(
