@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+from model import predict
 
 
 def capture():
@@ -29,10 +30,15 @@ def capture():
         # cv2.imshow('thresh', thresh)
 
         roi_edges = cv2.Canny(roi, 100, 200)
-        # cv2.imshow('Edges', roi_edges)
+        cv2.imshow('Edges', roi_edges)
 
         cv2.drawContours(roi, contours, -1, (0, 255, 0), 3)
         # cv2.imshow('roi', roi)
+
+        roi_edges = cv2.resize(roi_edges, (100, 100))
+        # print(roi.shape)
+        img = np.expand_dims(roi_edges, axis=2)
+        print(predict(img))
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break

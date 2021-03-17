@@ -3,6 +3,8 @@ dataset.pkl
 training_data.pkl
 testing_data.pkl
 __pycache__
+/code/__pycache__
+/code/.vs
 Work status Feb 25_2021.docx
 Work status March 1_2021.docx
 /code/model.h5
