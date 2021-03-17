@@ -18,6 +18,8 @@ infile = open(
 test = pickle.load(infile)
 infile.close()
 
+# Creating X_train, X_test, y_train, y_test
+
 X_train = np.zeros((len(train), 100, 100))
 y_train = np.zeros((len(train), 1), dtype=int)
 for i in range(len(train)):
@@ -34,6 +36,7 @@ for i in range(len(test)):
 X_train = np.expand_dims(X_train, axis=3)
 X_test = np.expand_dims(X_test, axis=3)
 
+#  model was done in google collab
 model = load_model(
     'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\code\model.h5')
 
@@ -45,6 +48,7 @@ print('model, accuracy: {:5.2f}%'.format(100 * acc))
 def predict(img):
     # added this for image to fit input shape of (1,100,100,1)
     img = np.expand_dims(img, axis=0)
+    # returns predicted character for that img
     return CATEGORIES[np.argmax(model.predict(img))]
 
 
