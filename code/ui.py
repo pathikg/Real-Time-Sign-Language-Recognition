@@ -136,7 +136,7 @@ img.place(x=0, y=0)
 label = tkinter.Label(frame3, text="Contact Details", font=("Arial Bold", 30))
 label.place(relx=0.5, rely=0.08, anchor='n')
 
-label1 = tkinter.Label(frame3, text="\nMayank Chopra \n +91 750-649-9595\nmayank.chopra@somaiya.edu\n\nPathik Ghughare \n +91 842-581-7345\npathik.g@somaiya.edu\n", anchor='w',
+label1 = tkinter.Label(frame3, text="\nMayank Chopra \n +91 750-649-9595\nmayank.chopra@somaiya.edu\n\nPathik Ghugare \n +91 842-581-7345\npathik.g@somaiya.edu\n", anchor='w',
                        font=("Olivia Bold", 14), bg='grey')
 label1.place(relx=0.3, rely=0.35, anchor='n')
 

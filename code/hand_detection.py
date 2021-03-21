@@ -18,7 +18,6 @@ def capture():
         cv2.rectangle(frame, (0, 0), (300, 50), (0, 0, 0), -1)
         frame = cv2.putText(frame, 'press q to exit', (30, 30), cv2.FONT_HERSHEY_SIMPLEX,
                             1, (255, 255, 255), 1, cv2.LINE_AA)
-        cv2.imshow('Smile', frame)
 
         roi = frame[120:400, 350:620]
         roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
@@ -30,18 +29,26 @@ def capture():
         # cv2.imshow('thresh', thresh)
 
         roi_edges = cv2.Canny(roi, 100, 200)
-        cv2.imshow('Edges', roi_edges)
+        # cv2.imshow('Edges', roi_edges)
 
         cv2.drawContours(roi, contours, -1, (0, 255, 0), 3)
         # cv2.imshow('roi', roi)
 
         roi_edges = cv2.resize(roi_edges, (100, 100))
         # print(roi.shape)
+        # to make roid_edges of shape (100,100,1)
         img = np.expand_dims(roi_edges, axis=2)
-        print(predict(img))
+        # cv2.imshow('input for model', img)
+
+        frame = cv2.putText(frame, predict(img), (300, 400), cv2.FONT_HERSHEY_SIMPLEX,
+                            1, (255, 255, 255), 1, cv2.LINE_AA)
+
+        cv2.imshow('Smile', frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
+        if cv2.waitKey(1) & 0xFF == ord('s'):
+            print(predict(img))
 
     cv2.destroyAllWindows()
     cap.release()

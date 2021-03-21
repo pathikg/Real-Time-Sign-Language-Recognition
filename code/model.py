@@ -41,8 +41,8 @@ model = load_model(
     'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\code\model.h5')
 
 
-loss, acc = model.evaluate(X_test, y_test, verbose=2)
-print('model, accuracy: {:5.2f}%'.format(100 * acc))
+# loss, acc = model.evaluate(X_test, y_test, verbose=2)
+# print('model, accuracy: {:5.2f}%'.format(100 * acc))
 
 
 def predict(img):
@@ -52,8 +52,8 @@ def predict(img):
     return CATEGORIES[np.argmax(model.predict(img))]
 
 
-i = 5
-print("predictions for image in testing data at index",
-      i, ":", predict(X_test[i]))
-print("Original image in testing data at index",
-      i, ":", CATEGORIES[y_test[i][0]])
+# i = 5
+# print("predictions for image in testing data at index",
+#       i, ":", predict(X_test[i]))
+# print("Original image in testing data at index",
+#       i, ":", CATEGORIES[y_test[i][0]])
