@@ -12,3 +12,7 @@ Work status March 1_2021.docx
 /code/model_200_with_50epoch.h5
 /code/model_200.h5
 /code/.vs
+/skinMask 200/model.h5
+/skinMask 200/model_30epoch.h5
+/skinMask 200/model_50epoch.h5
+/skinMask 200/.vs/
