@@ -4,11 +4,16 @@ from model import predict
 
 
 def capture():
+    # Define the codec and create VideoWriter object
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    out = cv2.VideoWriter('output.avi', fourcc, 5.0, (640, 480))
+
     s = ''
     k = 0
+    f = 0
+    r = 0
     cap = cv2.VideoCapture(0)
     while True:
-
         ret, frame = cap.read()
         frame = cv2.flip(frame, 1)
         frame_height = 480
@@ -41,28 +46,40 @@ def capture():
                             1, (255, 255, 255), 1, cv2.LINE_AA)
 
         key = cv2.waitKey(1) & 0xFF
-        if key == ord('q'):
+        if key == ord('q'):  # to exit
             break
-        elif key == ord('d'):
+        elif key == ord('d'):  # to add character to string
             s += predict(mask)
-            k = + 20
-        elif key == ord('s'):
+            k += 5
+            f = True
+        elif key == ord('s'):  # to add space
             s += ' '
-        elif key == ord('a'):
+        elif key == ord('a'):  # to remove character at the end
             if len(s) > 0:
                 s = list(s)
                 i = s.pop()
                 s = ''.join(s)
-        elif key == ord('c'):
+        elif key == ord('c'):  # to clear sentence
             s = ''
+        elif key == ord('r'):  # to start recording
+            r = True
+        elif key == ord('t'):  # to start recording
+            r = False
+        elif len(s) == 0:
+            f = False
 
-        # cv2.rectangle(frame, (290, 370), (330, 410), (0, 0, 0), -1)
-        x_org = 300-k 
+        x_org = 300-k
+        if f:
+            cv2.rectangle(frame, (x_org-5, 420),
+                          (x_org+20*len(s)+5, 460), (250, 250, 250), -1)
         frame = cv2.putText(frame, s, (x_org, 450), cv2.FONT_HERSHEY_SIMPLEX,
                             1, (0, 0, 0), 1, cv2.LINE_AA)
 
         cv2.imshow('Smile', frame)
         cv2.imshow('roi', mask)
+
+        if r:
+            out.write(frame)
 
     cv2.destroyAllWindows()
     cap.release()
