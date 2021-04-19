@@ -3,6 +3,7 @@ dataset.pkl
 training_data.pkl
 testing_data.pkl
 /__pycache__
+/.vscode/
 /Canny Edge/__pycache__/
 /skinMask 200/code/__pycache__/
 /skinMask 200/code/.vs/
