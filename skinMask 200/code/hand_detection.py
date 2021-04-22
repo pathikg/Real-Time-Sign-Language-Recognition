@@ -85,4 +85,4 @@ def capture():
     cap.release()
 
 
-capture()
+#   capture()
