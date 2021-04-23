@@ -16,7 +16,8 @@ class Example(Frame):
     def __init__(self, master, *pargs):
         Frame.__init__(self, master, *pargs)
 
-        self.image = Image.open("./code/bg_img.jpeg")
+        self.image = Image.open(
+            r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\skinMask 200\images\bg_img.jpeg")
         self.img_copy = self.image.copy()
 
         self.background_image = ImageTk.PhotoImage(self.image)
@@ -91,7 +92,8 @@ button4.place(x=430, y=400)
 # e.pack(fill=BOTH, expand=YES)
 
 
-load = Image.open("./code/shinyblack2.jpg")
+load = Image.open(
+    r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\skinMask 200\images\shinyblack2.jpg")
 render = ImageTk.PhotoImage(load)
 
 img = Label(frame2, image=render)
@@ -106,7 +108,7 @@ label1 = tkinter.Label(frame2, text="We are making a sign language recognition s
                        font=("Arial Bold", 12))
 label1.place(relx=0.32, rely=0.364, anchor='n')
 
-button1 = tkinter.Button(frame2, text="Start", font=(
+button1 = tkinter.Button(frame2, text="Home", font=(
     "Arial Bold", 12), height=2, width=15, command=lambda: show_frame(frame1))
 button1.place(x=450, y=175)
 
@@ -126,7 +128,8 @@ button4.place(x=450, y=400)
 # --------------------------------------------Contact Us----------------------------------------
 frame3.configure(bg='gainsboro')
 
-load = Image.open("./code/shinyblack1.jpg")
+load = Image.open(
+    r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\skinMask 200\images\shinyblack1.jpg")
 render = ImageTk.PhotoImage(load)
 
 img = Label(frame3, image=render)
@@ -140,7 +143,7 @@ label1 = tkinter.Label(frame3, text="\nMayank Chopra \n +91 750-649-9595\nmayank
                        font=("Olivia Bold", 14), bg='grey')
 label1.place(relx=0.3, rely=0.35, anchor='n')
 
-button1 = tkinter.Button(frame3, text="Start", font=(
+button1 = tkinter.Button(frame3, text="Home", font=(
     "Arial Bold", 12), height=2, width=15, command=lambda: show_frame(frame1))
 button1.place(x=430, y=175)
 

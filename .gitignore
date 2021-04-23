@@ -2,9 +2,22 @@
 dataset.pkl
 training_data.pkl
 testing_data.pkl
-__pycache__
-/code/__pycache__
+/__pycache__
+/.vscode/
+/Canny Edge/__pycache__/
+/skinMask 200/code/__pycache__/
+/skinMask 200/code/.vs/
 /code/.vs
 Work status Feb 25_2021.docx
 Work status March 1_2021.docx
-/code/model.h5
+
+/Canny Edge/model_98.h5
+/Canny Edge/model_200_with_50epoch.h5
+/Canny Edge/model.h5
+/Canny Edge/model_200.h5
+
+/Canny Edge/.vs
+/skinMask 200/model.h5
+/skinMask 200/model_30epoch.h5
+/skinMask 200/model_50epoch.h5
+/skinMask 200/.vs/
