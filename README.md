@@ -21,7 +21,7 @@ Install all the reqirements -
   $ pip install -r requirements.txt
  ``` 
  
-Download the CNN model used from this [link](https://drive.google.com/file/d/1-81s-_ke_heseeqBsKTZoJcqbcAON8ct/view?usp=sharing) and store it in your machine.
+Download the CNN model from this [link](https://drive.google.com/file/d/1-81s-_ke_heseeqBsKTZoJcqbcAON8ct/view?usp=sharing) and store it in your machine.
 Then update that model's path in model.py file
 ```
 model = load_model("YOUR_MODEL_PATH")
