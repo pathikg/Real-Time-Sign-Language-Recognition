@@ -1,0 +1,3 @@
+tensorflow == 2.4.1 
+numpy == 1.19.5
+PIL == 7.2.0

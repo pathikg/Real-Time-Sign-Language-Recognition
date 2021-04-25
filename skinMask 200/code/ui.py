@@ -40,7 +40,7 @@ class Example(Frame):
 window = tkinter.Tk()
 
 window.geometry('640x480')
-window.title("GUI")
+window.title("Sign Language Recognition")
 window.resizable(width=False, height=False)
 window.rowconfigure(0, weight=1)
 window.columnconfigure(0, weight=1)
