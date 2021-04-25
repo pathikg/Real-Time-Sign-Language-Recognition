@@ -8,3 +8,30 @@ Model used : https://drive.google.com/drive/folders/17dHfeRFlXhGsv-4um3cIzETB4HD
 (Use the one with name : model_30epoch.h5)
 
 (application is still in development)
+
+---
+
+
+
+  
+### To run this project :
+
+Clone the project -
+```
+  $ git clone https://github.com/Patrickbro13/Real-Time-Sign-Language-Recognition.git
+```
+  
+Install all the reqirements -
+```
+  $ pip install -r requirements.txt
+ ``` 
+
+Move to the skinMask200/code/ directory 
+
+Run the following commands -
+
+```
+python ui.py
+```
+
+---
