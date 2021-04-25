@@ -65,7 +65,7 @@ e = Example(frame1)
 e.pack(fill=BOTH, expand=YES)
 
 label = tkinter.Label(
-    frame1, text="Sign Language Detection", font=("Arial Bold", 30))
+    frame1, text="Sign Language Recognition", font=("Arial Bold", 30))
 label.place(relx=0.5, rely=0.08, anchor='n')
 
 
