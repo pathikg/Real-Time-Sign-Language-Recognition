@@ -1,4 +1,4 @@
-<h1 align="center">Real Time-Sign Language Recognition </h1>
+<h1 align="center">Real Time Sign Language Recognition </h1>
 
 <div align="center">
  
