@@ -1,4 +1,14 @@
-# Real-Time-Sign-Language-Recognition
+<h1 align="center">Real Time-Sign Language Recognition </h1>
+
+<div align="center">
+ 
+  [![](https://img.shields.io/badge/Made_with-Python3-red?style=for-the-badge&logo=python)](https://www.python.org/ "Python3")
+  [![](https://img.shields.io/badge/Made_with-Tensorflow-red?style=for-the-badge&logo=tensorflow)](https://www.tensorflow.org/ "Tensorflow")
+  [![](https://img.shields.io/badge/Made_with-Tkinter-red?style=for-the-badge&logo=tkinter)](https://docs.python.org/3/library/tkinter.html "Tkinter")
+  
+</div>
+
+
 
 Dataset used : [ASL Dataset](https://drive.google.com/drive/folders/1v3EWedumUJ64xmrPOfQ7e3GJ5K-GC45d?usp=sharing)
 
