@@ -8,6 +8,22 @@
   
 </div>
 
+<h2> About </h2>
+
+&emsp; Nearly 5% of the world’s population is said to be hearing impaired, this creates a major problem for the communication with the deaf and the dumb, specially abled persons. To decrease the communication gap between hearing impaired community and the normal persons, we have designed a Sign Language Recognition System.
+Our application allows users to show a sign on a webcam and that sign gets converted to its respective alphabet and displayed on the screen. 
+
+---
+
+<h2> Functionalities </h2>
+
+* Detecting a sign and displaying the corresponding alphabets from A to Z ( Excluding J and Z)
+* Detecting a sign indicated by user on a live feed and displaying corresponding alphabet
+* Forming a word/sentence from the individual signs shown by user on a live webcam and displaying that word on a screen
+* Recording and storing a video of user showing signs on a webcam with its respective results in a local machine 
+
+
+---
 
 
 Dataset used : [ASL Dataset](https://drive.google.com/drive/folders/1v3EWedumUJ64xmrPOfQ7e3GJ5K-GC45d?usp=sharing)
@@ -15,7 +31,6 @@ Dataset used : [ASL Dataset](https://drive.google.com/drive/folders/1v3EWedumUJ6
 Colab notebook : https://colab.research.google.com/drive/1ObDUs0TZ_iXrsWTY5St536yy1ZR-cGMM?usp=sharing
 
 ---
-
 
 
   
