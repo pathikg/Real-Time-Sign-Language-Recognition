@@ -61,3 +61,17 @@ python ui.py
 ```
 
 ---
+#### This project still has scope of development, so you can also contribute to this Project as follows:
+* [Fork](https://github.com/Patrickbro13/Real-Time-Sign-Language-Recognition) this Repository.
+* Clone your Fork on a different branch:
+	* `git clone -b <name-of-branch> https://github.com/Patrickbro13/Real-Time-Sign-Language-Recognition.git`
+* After adding any feature:
+	* Goto your fork and create a pull request.
+	* We will test your modifications and merge changes.
+
+---
+<h4 align="center"><b>Developed with :heart: by 
+<a href="https://github.com/Patrickbro13">Pathik Ghugare</a> and <a href="https://github.com/Mayank7832">Mayank Chopra</a> </b> , 
+</h4>
+
+---
