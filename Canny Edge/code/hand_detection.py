@@ -59,7 +59,7 @@ def capture():
             sen += predict(img)
             print(sen)
 
-        frame = cv2.putText(frame, sen , (300, 500),
+        frame = cv2.putText(frame, sen, (300, 500),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 1, cv2.LINE_AA)
 
         cv2.imshow('Smile', frame)
@@ -68,4 +68,4 @@ def capture():
     cap.release()
 
 
-capture()
+# capture()

@@ -63,10 +63,10 @@ testing_data = data[t:]
 # storing training and testing data into a pickle file
 # so that while training and testing of the model that pickle file can be loaded directly
 
-with open(r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\training_data.pkl", "wb") as f:
+with open(r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\Canny Edge\training_data.pkl", "wb") as f:
     pickle.dump(training_data, f)
-f.close()
 
-with open(r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\testing_data.pkl", "wb") as f:
+
+with open(r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\Canny Edge\testing_data.pkl", "wb") as f:
     pickle.dump(testing_data, f)
-f.close()
+
