@@ -73,6 +73,17 @@ python main.py
 
 ---
 
+### Demo :
+<!-- blank line -->
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="skinMask 200/images/bg_img.jpeg">
+    <source src="https://github.com/Patrickbro13/Real-Time-Sign-Language-Recognition/blob/main/demo.mp4" type="video/mp4">
+  </video>
+</figure>
+<!-- blank line -->
+
+
+
 #### This project still has scope of development, so you can also contribute to this Project as follows:
 * [Fork](https://github.com/Patrickbro13/Real-Time-Sign-Language-Recognition) this Repository.
 * Clone your Fork on a different branch:
