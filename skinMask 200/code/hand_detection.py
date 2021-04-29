@@ -6,7 +6,7 @@ from model import predict
 def capture():
     # Define the codec and create VideoWriter object
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter("output.avi", fourcc, 5.0, (640, 480))
+    out = cv2.VideoWriter("recording.avi", fourcc, 5.0, (640, 480))
 
     s = ''
     k = 0
