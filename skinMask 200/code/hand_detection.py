@@ -6,7 +6,7 @@ from model import predict
 def capture():
     # Define the codec and create VideoWriter object
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter('output.avi', fourcc, 5.0, (640, 480))
+    out = cv2.VideoWriter("recording.avi", fourcc, 5.0, (640, 480))
 
     s = ''
     k = 0
@@ -69,20 +69,21 @@ def capture():
             f = False
 
         x_org = 300-k
-        if f:
+        if f: # if string was added then shift a bit to left 
             cv2.rectangle(frame, (x_org-5, 420),
                           (x_org+20*len(s)+5, 460), (250, 250, 250), -1)
         frame = cv2.putText(frame, s, (x_org, 450), cv2.FONT_HERSHEY_SIMPLEX,
                             1, (0, 0, 0), 1, cv2.LINE_AA)
 
+        if r:
+            cv2.circle(frame, (600,40), 8 ,(0,0,255), -1 )
+            out.write(frame)
+
         cv2.imshow('Smile', frame)
         cv2.imshow('roi', mask)
-
-        if r:
-            out.write(frame)
 
     cv2.destroyAllWindows()
     cap.release()
 
 
-#   capture()
+# capture()

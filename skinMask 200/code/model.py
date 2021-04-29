@@ -1,5 +1,4 @@
 import tensorflow as tf
-import keras
 from tensorflow.keras.models import load_model
 import numpy as np
 

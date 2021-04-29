@@ -38,7 +38,7 @@ CATEGORIES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L',
 
 #  model was done in google collab
 model = load_model(
-    'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\code\model_200_with_50epoch.h5')
+    'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\Canny Edge\code\model_200_with_50epoch.h5')
 
 
 # loss, acc = model.evaluate(X_test, y_test, verbose=2)

@@ -33,4 +33,3 @@ load_data()
 
 with open("E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset.pkl", "wb") as f:
     pickle.dump(data, f)
-f.close()
