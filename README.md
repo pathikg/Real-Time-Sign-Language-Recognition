@@ -57,7 +57,7 @@ Move to the skinMask200/code/ directory
 Run the following commands -
 
 ```
-python ui.py
+python main.py
 ```
 
 ---
