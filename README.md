@@ -61,6 +61,18 @@ python ui.py
 ```
 
 ---
+
+### Keyboard commands  :
+
+* Press R to start recording 
+* Press D to add predicted sign to previous displayed result
+* Press S to add space to previous displayed result
+* Press A to delete last displayed result
+* Press C to clear the all displayed results 
+* Press T to stop recording 
+
+---
+
 #### This project still has scope of development, so you can also contribute to this Project as follows:
 * [Fork](https://github.com/Patrickbro13/Real-Time-Sign-Language-Recognition) this Repository.
 * Clone your Fork on a different branch:
