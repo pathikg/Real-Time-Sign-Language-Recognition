@@ -9,10 +9,8 @@ import pickle
 DATADIR = "E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset"
 CATEGORIES = os.listdir(DATADIR)
 
-infile = open(
-    'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset.pkl', 'rb')
-data = pickle.load(infile)
-infile.close()
+with open('E:\Pathik\KJ\sem4\MiniProject\ASL recognition\dataset.pkl', 'rb') as f:
+    data = pickle.load(f) 
 
 plt.subplot(2, 2, 1)
 plt.title('before shuffle : '+str(CATEGORIES[data[50][1]]))

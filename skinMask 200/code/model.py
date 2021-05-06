@@ -15,7 +15,7 @@ def predict(img):
 
 #  model was done in google collab
 model = load_model(
-    r'D:\mayank\College\labs\Mini project\model_30epoch.h5')
+    r'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\skinMask 200\model_30epoch.h5')
 
 
 # saver = tf.train.Saver()
