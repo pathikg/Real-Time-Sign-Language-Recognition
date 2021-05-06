@@ -17,7 +17,7 @@ class Example(Frame):
         Frame.__init__(self, master, *pargs)
 
         self.image = Image.open(
-            r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\skinMask 200\images\bg_img.jpeg")
+            r"skinMask 200\images\bg_img.jpeg")
         self.img_copy = self.image.copy()
 
         self.background_image = ImageTk.PhotoImage(self.image)
@@ -93,7 +93,7 @@ button4.place(x=430, y=400)
 
 
 load = Image.open(
-    r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\skinMask 200\images\shinyblack2.jpg")
+    r"skinMask 200\images\shinyblack1.jpg")
 render = ImageTk.PhotoImage(load)
 
 img = Label(frame2, image=render)
@@ -129,7 +129,7 @@ button4.place(x=450, y=400)
 frame3.configure(bg='gainsboro')
 
 load = Image.open(
-    r"E:\Pathik\KJ\sem4\MiniProject\ASL recognition\skinMask 200\images\shinyblack1.jpg")
+    r"skinMask 200\images\shinyblack1.jpg")
 render = ImageTk.PhotoImage(load)
 
 img = Label(frame3, image=render)
