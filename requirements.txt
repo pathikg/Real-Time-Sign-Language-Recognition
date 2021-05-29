@@ -1,4 +1,4 @@
-tensorflow == 2.4.1 
+tensorflow == 2.4.2 
 numpy == 1.19.5
 PIL == 7.2.0
 tqdm == 4.48.2
