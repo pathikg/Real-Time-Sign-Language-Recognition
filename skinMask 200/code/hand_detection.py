@@ -25,9 +25,9 @@ def capture():
         cv2.rectangle(frame, (400, 100), (600, 300), (0, 255, 0), 2)
 
         # rectangle of background of text s
-        cv2.rectangle(frame, (0, 0), (300, 50), (0, 0, 0), -1)
-        frame = cv2.putText(frame, 'press q to exit', (30, 30), cv2.FONT_HERSHEY_SIMPLEX,
-                            1, (255, 255, 255), 1, cv2.LINE_AA)
+        # cv2.rectangle(frame, (0, 0), (300, 50), (0, 0, 0), -1)
+        # frame = cv2.putText(frame, 'press q to exit', (30, 30), cv2.FONT_HERSHEY_SIMPLEX,
+        #                     1, (255, 255, 255), 1, cv2.LINE_AA)
 
         # region of interest i.e rectangle which we drawn earlier
         roi = frame[100:300, 400:600]
