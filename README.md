@@ -70,6 +70,7 @@ python main.py
 * Press A to delete last displayed result
 * Press C to clear the all displayed results 
 * Press T to stop recording 
+* Press Q to exit
 
 ---
 
