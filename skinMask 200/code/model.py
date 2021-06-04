@@ -1,4 +1,5 @@
-import tensorflow as tf
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from tensorflow.keras.models import load_model
 import numpy as np
 
@@ -16,7 +17,6 @@ def predict(img):
 #  model was done in google collab
 model = load_model(
     r'E:\Pathik\KJ\sem4\MiniProject\ASL recognition\skinMask 200\model_30epoch.h5')
-
 
 # saver = tf.train.Saver()
 # sess = tf.keras.backend.get_session()

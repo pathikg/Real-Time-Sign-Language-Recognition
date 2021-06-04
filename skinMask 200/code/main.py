@@ -1,7 +1,6 @@
 import tkinter
 from tkinter import *
 from PIL import Image, ImageTk
-import os
 from hand_detection import capture
 
 import matplotlib

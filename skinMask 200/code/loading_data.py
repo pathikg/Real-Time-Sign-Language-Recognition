@@ -1,9 +1,7 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
 import os
 from tqdm import tqdm
-import random
 import pickle
 
 
