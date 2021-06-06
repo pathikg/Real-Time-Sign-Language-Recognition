@@ -1,5 +1,5 @@
 import os
-# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # comment out if you don't want to see all error messages from tensorflow
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # comment out if you don't want to see all error messages from tensorflow
 from tensorflow.keras.models import load_model
 import numpy as np
 

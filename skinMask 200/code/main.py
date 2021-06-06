@@ -4,9 +4,9 @@ from PIL import Image, ImageTk
 from hand_detection import capture
 
 import matplotlib
-
 matplotlib.use('Agg')
 
+print("starting...")
 
 def show_frame(frame):
     frame.tkraise()
