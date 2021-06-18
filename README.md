@@ -30,6 +30,8 @@ Dataset used : [ASL Dataset](https://drive.google.com/drive/folders/1v3EWedumUJ6
 
 Colab notebook : https://colab.research.google.com/drive/1ObDUs0TZ_iXrsWTY5St536yy1ZR-cGMM?usp=sharing
 
+Link to different Pickle files used in colab notebook : https://drive.google.com/drive/folders/18tBtniXy8X6Bg-PsSijzQalPIudTJjES?usp=sharing
+
 ---
 
 
