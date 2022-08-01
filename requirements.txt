@@ -1,5 +1,5 @@
 tensorflow >= 2.5.1
-numpy == 1.19.5
+numpy == 1.22.0
 PIL == 7.2.0
 tqdm == 4.48.2
 cv2 == 4.3.0
